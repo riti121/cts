@@ -1,0 +1,9 @@
+<pre>
+<?php 
+session_start();
+if(isset($_GET['nm']))
+{
+    $_SESSION['cart'][]=array("nm"=>$_GET['pname'],"price"=>$_GET['pprice'],"qty"=>1)
+}
+   header("location:cart.php");
+?>
